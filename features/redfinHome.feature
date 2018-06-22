@@ -20,4 +20,3 @@ Scenario: Successful Search for Property
     Then I should see min beds drop down appear
     When I click the "2" on the min bed drop down
     Then "2" min beds filter should be added
-

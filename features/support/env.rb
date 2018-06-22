@@ -1,11 +1,8 @@
-# require 'capybara/dsl' 
-# require 'cucumber'
-# require 'selenium-webdriver'
+require 'capybara'
+require 'capybara/dsl'
 
-# Capybara.default_driver = :selenium
-# Capybara.app_host = "https://www.redfin.com/stingray/do/login"
-# Capybara.register_driver :selenium do |app|
-#   Capybara::Selenium::Driver.new app, browser: :chrome
-# end
- 
-# World(Capybara::DSL)
+Capybara.run_server = false
+#Set default driver as selenium_chrome
+Capybara.default_driver = :selenium_chrome
+#Set default selector as css
+Capybara.default_selector = :css
